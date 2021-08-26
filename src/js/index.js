@@ -3,7 +3,7 @@
 const button = document.querySelectorAll('.follow-btn');
 
 /* Ищем span в который записано число фолловеров. 
-Число будут меняться поэтому присваеваем значение через let */
+Числа будут меняться поэтому присваеваем значение через let */
 let followersNumber = document.getElementById('followers');
 
 /* Получаем целое число фолловеров без запятых */
@@ -30,12 +30,12 @@ button.forEach((button) => {
       if (button.innerText.toLowerCase() === 'follow') {
          button.innerText = 'FOLLOWING';
          button.classList.add('follow-btn_active');
-         ++followersCount;
+         followersCount++;
          followersNumber.innerText = numberWithCommas(followersCount);
       } else {
          button.innerText = 'FOLLOW';
          button.classList.remove('follow-btn_active');
-         --followersCount;
+         followersCount--;
          followersNumber.innerText = numberWithCommas(followersCount);
       }
    });
