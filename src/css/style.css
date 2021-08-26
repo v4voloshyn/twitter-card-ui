@@ -1,0 +1,22 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.card__wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+.card__body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 500px;
+   height: 600px;
+   background-color: rgb(194, 235, 193);
+   
+}
