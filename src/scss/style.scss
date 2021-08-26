@@ -60,22 +60,22 @@
       height: 312px;
       border-bottom: 12px solid #5cc0ff;
 
-      &::after {
-         content:'';
-         background: no-repeat url('../images/avatar.jpg');
-         background-size: cover;
-         background-color: #fff;
-         position: absolute;
-         bottom: -65px;
-         left: 50%;
-         transform: translateX(-50%);
-         width: 105px;
-         height: 105px;
-         border: 12px solid #5cc0ff; 
-         border-radius: 100%;
-         z-index: 5;
-         
-      }
+   }
+   &__avatar {
+      position: absolute;
+      box-sizing: content-box;
+      background: url('../images/avatar.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #fff;
+      bottom: -65px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 105px;
+      height: 105px;
+      border: 12px solid #5cc0ff; 
+      border-radius: 100%;
+      z-index: 5;
    }
 
    &__footer {
@@ -97,7 +97,7 @@
             line-height: 29px;
          }
       }
-      &_twits {
+      &_tweets {
          padding-right: 56px;
       }
    }
